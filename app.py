@@ -75,7 +75,22 @@ function fancy(){
 }
 </script></body></html>
 """
+
+@app.route('/sitemap.xml')
+def sitemap():
+    xml = '''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://free-online-tools-pro.vercel.app/</loc><priority>1.0</priority></url>
+</urlset>'''
+    return xml, 200, {'Content-Type': 'application/xml'}
+
+@app.route('/robots.txt')
+def robots():
+    txt = "User-agent: *\nAllow: /\nSitemap: https://free-online-tools-pro.vercel.app/sitemap.xml"
+    return txt, 200, {'Content-Type': 'text/plain'}
+
 @app.route('/')
+
 def home():
     return HTML
 if __name__ == '__main__':
