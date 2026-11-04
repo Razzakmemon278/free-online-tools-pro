@@ -2,6 +2,7 @@ from flask import Flask
 app = Flask(__name__)
 HTML = """<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TOOLS PRO V3</title>
+<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 <style>*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}body{background:#f1f5ff}
