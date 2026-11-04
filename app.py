@@ -1,6 +1,6 @@
 from flask import Flask
 app = Flask(__name__)
-HTML = """<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+HTML = """<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="google-site-verification" content="A0MmRxtf6JACbifLhwn_EyeoO1vxKZI9g1LAP2_iOk8" /><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TOOLS PRO V3</title>
 <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
